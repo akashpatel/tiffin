@@ -1,0 +1,32 @@
+%p#notice= notice
+
+%p
+  = image_tag @dish.img_url
+%p
+  %b Name:
+  = @dish.name
+%p
+  %b Desc:
+  = @dish.desc
+%p
+  %b Ingredients:
+  = @dish.ingredients
+%p
+  %b Calories:
+  = @dish.calories
+%p
+  %b Protein:
+  = @dish.protein
+%p
+  %b Sodium:
+  = @dish.sodium
+%p
+  %b Carbs:
+  = @dish.carbs
+%p
+  %b Price:
+  = @dish.price
+
+%p
+  %b Total ordered:
+  = @dish.total_ordered

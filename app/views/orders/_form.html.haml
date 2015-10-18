@@ -1,0 +1,22 @@
+= form_for :order, {url: orders_path} do |f|
+  = f.hidden_field :dish_id, value: @dish.id
+
+  First name: #{f.text_field :first}
+  %br/
+
+  Last name : #{f.text_field :last}
+  %br/
+
+  Email : #{f.text_field :email}
+  %br/
+
+  Phone: #{f.text_field :phone}
+  %br/
+
+  Quantity: #{f.select :quantity, [0, 1, 2, 3]}
+  %br/
+
+  Deliver to: #{f.select :deliver_to, ["Netflix", "Google"]}
+  %br/
+
+  = f.submit
